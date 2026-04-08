@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Heatwave CMR HUD</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.164.1/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.164.1/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <canvas id="app" aria-label="Heatwave CMR HUD preview"></canvas>
+
+    <div class="intro">
+      <div class="intro-panel">
+        <p class="eyebrow">Heatwave Filter / Quest Prototype</p>
+        <h1>Continuum-style thermal HUD</h1>
+        <p>
+          This is the fastest route from your old filter assets to something
+          usable on Quest 3: a static WebXR page that runs in Quest Browser or
+          on GitHub Pages.
+        </p>
+        <p>
+          It is a VR simulation, not true Quest passthrough. If you want a real
+          mixed-reality HUD later, keep this UI and move it into Unity with Meta
+          XR.
+        </p>
+        <div class="pill-row">
+          <span class="pill">Quest Browser: supported</span>
+          <span class="pill">GitHub Pages: ready</span>
+          <span class="pill">Unity port: optional next step</span>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "HeatwaveText";
+  src: url("./fonts/Roboto-Light.ttf") format("truetype");
+  font-display: swap;
+}
+
+:root {
+  --bg: #040712;
+  --panel: rgba(6, 14, 28, 0.74);
+  --panel-border: rgba(112, 229, 255, 0.34);
+  --text: #ebfbff;
+  --muted: rgba(212, 242, 255, 0.72);
+  --accent: #70e5ff;
+  --accent-2: #b3ff4b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top, rgba(78, 31, 122, 0.46), transparent 38%),
+    radial-gradient(circle at bottom left, rgba(0, 132, 255, 0.18), transparent 36%),
+    var(--bg);
+  color: var(--text);
+  font-family: "HeatwaveText", "Avenir Next", "Segoe UI", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+#app {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+.intro {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1.5rem;
+  pointer-events: none;
+}
+
+.intro-panel {
+  width: min(32rem, calc(100vw - 2.5rem));
+  padding: 1.15rem 1.25rem 1.25rem;
+  border: 1px solid var(--panel-border);
+  border-radius: 1.1rem;
+  background:
+    linear-gradient(135deg, rgba(10, 26, 52, 0.86), rgba(19, 7, 36, 0.76)),
+    var(--panel);
+  box-shadow:
+    0 1.25rem 2.75rem rgba(0, 0, 0, 0.28),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(14px);
+}
+
+.eyebrow {
+  margin: 0 0 0.55rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(1.8rem, 4vw, 2.9rem);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+}
+
+p {
+  margin: 0.6rem 0 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.95rem;
+}
+
+.pill {
+  border: 1px solid rgba(179, 255, 75, 0.24);
+  border-radius: 999px;
+  padding: 0.45rem 0.75rem;
+  background: rgba(179, 255, 75, 0.08);
+  color: rgba(232, 255, 196, 0.98);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
+#VRButton {
+  border-radius: 999px !important;
+  border: 1px solid rgba(112, 229, 255, 0.36) !important;
+  background: linear-gradient(135deg, rgba(16, 69, 127, 0.92), rgba(60, 14, 82, 0.84)) !important;
+  color: #effcff !important;
+  font-family: "HeatwaveText", "Avenir Next", sans-serif !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  box-shadow: 0 0.75rem 1.8rem rgba(0, 0, 0, 0.28) !important;
+}
+
+body.is-xr .intro {
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+@media (max-width: 640px) {
+  .intro {
+    align-items: flex-end;
+    padding: 1rem;
+  }
+
+  .intro-panel {
+    padding: 1rem;
+  }
+
+  p {
+    font-size: 0.92rem;
+  }
+}
