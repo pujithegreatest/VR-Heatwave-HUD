@@ -8,6 +8,7 @@ This repo contains a lightweight WebXR prototype for a Continuum-style thermal H
 - Runs in desktop browsers for preview.
 - Runs in Quest Browser with `Enter VR`.
 - Ready to publish as-is to GitHub Pages.
+- Includes desktop movement controls and spectrum switching for laptop preview.
 
 ## Fastest Way To Use It
 
@@ -26,6 +27,15 @@ python3 -m http.server 8000
 ```
 
 Then open `http://localhost:8000` on your computer, or use your machine's local IP from Quest if both are on the same network.
+
+## Desktop Controls
+
+- Drag with the mouse to look around.
+- Use `W`, `A`, `S`, `D` to move.
+- Use `R` and `F` to move up and down.
+- Hold `Shift` to move faster.
+- Press `P` to cycle thermal spectrum modes.
+- Press `H` to hide or show the desktop help panel.
 
 ## Important Limitation
 
