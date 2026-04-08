@@ -1,6 +1,6 @@
-# Heatwave CMR HUD
+# VR Heatwave HUD
 
-This folder now contains the easiest Quest-friendly version of the old Heatwave filter concept: a static WebXR prototype built with `index.html`, `app.js`, and `styles.css`.
+This repo contains a lightweight WebXR prototype for a Continuum-style thermal HUD on Quest 3. It is built as a static site with `index.html`, `app.js`, and `styles.css`.
 
 ## What It Is
 
@@ -11,7 +11,7 @@ This folder now contains the easiest Quest-friendly version of the old Heatwave 
 
 ## Fastest Way To Use It
 
-1. Put this folder in a GitHub repo.
+1. Push this repo to GitHub.
 2. Enable GitHub Pages for the repo root.
 3. Open the published URL in Quest Browser.
 4. Tap `Enter VR`.
@@ -21,7 +21,7 @@ This folder now contains the easiest Quest-friendly version of the old Heatwave 
 Open a simple static server from this folder, for example:
 
 ```bash
-cd "/Users/pujisan/Desktop/NOT STARTED/(s) Heatwave filter"
+cd "/Users/pujisan/Documents/GitHub/repo/VR-Heatwave-HUD"
 python3 -m http.server 8000
 ```
 
