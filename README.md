@@ -21,7 +21,7 @@ This repo contains a lightweight WebXR prototype for a Continuum-style thermal H
 Open a simple static server from this folder, for example:
 
 ```bash
-cd "/Users/pujisan/Documents/GitHub/repo/VR-Heatwave-HUD"
+cd "/Users/{your_name}/Documents/GitHub/VR-Heatwave-HUD"
 python3 -m http.server 8000
 ```
 
